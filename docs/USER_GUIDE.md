@@ -11,24 +11,25 @@ This guide covers every step of the daily bulletin workflow — from login throu
 ## Table of Contents
 
 1. [Getting Started — Login](#getting-started--login)
-2. [Application Layout](#application-layout)
-3. [Meteo Bulletin Workflow](#meteo-bulletin-workflow)
+2. [Screenshot Checklist](#screenshot-checklist)
+3. [Application Layout](#application-layout)
+4. [Meteo Bulletin Workflow](#meteo-bulletin-workflow)
    - [1. Select or Create a Meteo Bulletin](#1-select-or-create-a-meteo-bulletin)
    - [2. Fill in the Meteo Grid](#2-fill-in-the-meteo-grid)
    - [3. Tabs: Physical Discomfort and Notes/Tendency](#3-tabs-physical-discomfort-and-notestendency)
    - [4. Save and Validate](#4-save-and-validate)
    - [5. Revise a Published Bulletin](#5-revise-a-published-bulletin)
-4. [CFD Alert Bulletin Workflow](#cfd-alert-bulletin-workflow)
+5. [CFD Alert Bulletin Workflow](#cfd-alert-bulletin-workflow)
    - [1. Select or Create a CFD Bulletin](#1-select-or-create-a-cfd-bulletin)
    - [2. Fill in Alert Levels per Zone](#2-fill-in-alert-levels-per-zone)
    - [3. Maps](#3-maps)
    - [4. Soil State and Section Levels](#4-soil-state-and-section-levels)
    - [5. Copy Today to Tomorrow](#5-copy-today-to-tomorrow)
    - [6. Validate and Publish](#6-validate-and-publish)
-5. [Printing Bulletins](#printing-bulletins)
-6. [Reference Tables (Doc. e Tabelle)](#reference-tables-doc-e-tabelle)
-7. [Bulletin States Reference](#bulletin-states-reference)
-8. [Keyboard & Usability Tips](#keyboard--usability-tips)
+6. [Printing Bulletins](#printing-bulletins)
+7. [Reference Tables (Doc. e Tabelle)](#reference-tables-doc-e-tabelle)
+8. [Bulletin States Reference](#bulletin-states-reference)
+9. [Keyboard & Usability Tips](#keyboard--usability-tips)
 
 ---
 
@@ -49,6 +50,25 @@ If your session has already expired and you receive a *"Credenziali scadute"* me
 
 ---
 
+## Screenshot Checklist
+
+Place all screenshots in `docs/screenshots/` using these exact names:
+
+| File name | Capture this screen | Section reference |
+|-----------|---------------------|-------------------|
+| `01-login.png` | Login form before authentication | Getting Started — Login |
+| `02-base-home.png` | Base page with navbar expanded | Application Layout |
+| `03-meteo-select.png` | Meteo bulletin selection table | Meteo Workflow 1 |
+| `04-meteo-editor-grid.png` | Meteo grid editor with OGGI or DOMANI selected | Meteo Workflow 2 |
+| `05-cfd-select.png` | CFD two-table selector (meteo + CFD) | CFD Workflow 1 |
+| `06-cfd-editor-maps-a.png` | CFD map view #1 (first risk tab) | CFD Workflow 2/3 |
+| `06-cfd-editor-maps-b.png` | CFD map view #2 (second risk tab) | CFD Workflow 2/3 |
+| `06-cfd-editor-maps-c.png` | CFD map view #3 (third risk tab) | CFD Workflow 2/3 |
+
+See `docs/screenshots/README.md` for capture quality guidelines.
+
+---
+
 ## Application Layout
 
 ```
@@ -64,6 +84,8 @@ If your session has already expired and you receive a *"Credenziali scadute"* me
 │                                                          │
 └──────────────────────────────────────────────────────────┘
 ```
+
+![Application layout placeholder](screenshots/02-base-home.png)
 
 ### Navigation bar buttons
 
@@ -96,6 +118,8 @@ Click **Meteo** in the navigation bar. The bulletin selector screen opens.
 
 > A bulletin labelled **AVVISO METEO** indicates it is a weather *advisory* rather than a standard forecast bulletin. The **per allerta CFD** checkbox links it to a civil-protection alert bulletin.
 
+![Meteo selector placeholder](screenshots/03-meteo-select.png)
+
 ---
 
 ### 2. Fill in the Meteo Grid
@@ -121,6 +145,8 @@ The left sidebar (phenomenon labels) and the grid scroll **in sync** — you alw
 - **COPIA da OGGI** (on the DOMANI tab): copies today's grid values to tomorrow.
 
 These shortcuts significantly reduce data entry when conditions are similar across days.
+
+![Meteo editor grid placeholder](screenshots/04-meteo-editor-grid.png)
 
 ---
 
@@ -200,6 +226,8 @@ To link a meteo bulletin to a new CFD bulletin:
 
 > A CFD bulletin references a meteo bulletin. The meteo data is displayed on the left maps of each risk card as context.
 
+![CFD selector placeholder](screenshots/05-cfd-select.png)
+
 ---
 
 ### 2. Fill in Alert Levels per Zone
@@ -217,6 +245,10 @@ For each risk tab:
 3. The zone updates immediately.
 
 Some risk types have an **Attivo** checkbox. When unchecked, the risk is considered inactive for that bulletin and its alert levels are ignored.
+
+![CFD maps placeholder A](screenshots/06-cfd-editor-maps-a.png)
+![CFD maps placeholder B](screenshots/06-cfd-editor-maps-b.png)
+![CFD maps placeholder C](screenshots/06-cfd-editor-maps-c.png)
 
 ---
 
@@ -283,12 +315,14 @@ The CFD bulletin follows the same state machine as the meteo bulletin:
    - **Stampa Verticale** for portrait PDF layout.
 5. The PDF is downloaded automatically.
 
+
 ### Print CFD Bulletin
 
 1. Navigate to `/stampacfd`.
 2. Select the CFD bulletin from the dropdown.
 3. Click **Stampa**.
 4. The PDF is generated server-side and downloaded.
+
 
 ---
 

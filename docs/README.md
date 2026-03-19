@@ -27,8 +27,9 @@ multi-risk weather and civil-protection bulletins.**
 6. [Configuration](#configuration)
 7. [Available Scripts](#available-scripts)
 8. [Application Workflow](#application-workflow)
-9. [Documentation Index](#documentation-index)
-10. [License](#license)
+9. [Suggested Screenshots](#suggested-screenshots)
+10. [Documentation Index](#documentation-index)
+11. [License](#license)
 
 ---
 
@@ -301,6 +302,31 @@ stateDiagram-v2
   revision : 5 · In corso di compilazione (revisione)
   revalidated : 6 · Validato (revisione)
 ```
+
+---
+
+## Suggested Screenshots
+
+Store screenshots in `docs/screenshots/` using the file names below.
+
+| File name | What to capture |
+|-----------|-----------------|
+| `01-login.png` | Login page with username/password form and environment label |
+| `02-base-home.png` | Base/home view after successful login with top navigation visible |
+| `03-meteo-select.png` | Meteo bulletin selector table with date/time and create action |
+| `04-meteo-editor-grid.png` | Meteo editor grid showing OGGI/DOMANI tabs and coloured cells |
+| `05-cfd-select.png` | CFD select view with meteo list and CFD list side by side |
+| `06-cfd-editor-maps-a.png` | CFD editor map screenshot #1 (risk tab A) |
+| `06-cfd-editor-maps-b.png` | CFD editor map screenshot #2 (risk tab B) |
+| `06-cfd-editor-maps-c.png` | CFD editor map screenshot #3 (risk tab C) |
+
+![Login placeholder](screenshots/01-login.png)
+![Meteo editor placeholder](screenshots/04-meteo-editor-grid.png)
+![CFD maps placeholder A](screenshots/06-cfd-editor-maps-a.png)
+![CFD maps placeholder B](screenshots/06-cfd-editor-maps-b.png)
+![CFD maps placeholder C](screenshots/06-cfd-editor-maps-c.png)
+
+For capture guidance and resolution recommendations, see `docs/screenshots/README.md`.
 
 ---
 
